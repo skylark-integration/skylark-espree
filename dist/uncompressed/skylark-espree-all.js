@@ -6985,7 +6985,7 @@ define('skylark-espree/lib/options',[],function(){
      * @throws {Error} throws an error if the ecmaVersion is invalid.
      * @returns {number} normalized ECMAScript version
      */
-    function normalizeEcmaVersion(ecmaVersion = 5) {
+    function normalizeEcmaVersion(ecmaVersion = 'latest') { //5 lwf
 
         let version = ecmaVersion === "latest" ? getLatestEcmaVersion() : ecmaVersion;
 
